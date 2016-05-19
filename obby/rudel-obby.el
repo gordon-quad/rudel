@@ -458,11 +458,6 @@ The resulting message is a string that looks like this:
 (rudel-add-backend (rudel-backend-get-factory 'protocol)
 		   'obby 'rudel-obby-backend)
 
-;;;###autoload
-(eval-after-load 'rudel-zeroconf
-  '(rudel-zeroconf-register-service "_lobby._tcp"
-				    'start-tls 'obby))
-
 (provide 'rudel-obby)
 
 (require 'rudel-obby-display) ;; define `rudel-display-string'; this

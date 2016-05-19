@@ -171,10 +171,5 @@ document) associated to the new group."
 (rudel-add-backend (rudel-backend-get-factory 'protocol)
 		   'infinote 'rudel-infinote-backend)
 
-;;;###autoload
-(eval-after-load 'rudel-zeroconf
-  '(rudel-zeroconf-register-service "_infinote._tcp"
-				    'xmpp 'infinote))
-
 (provide 'rudel-infinote)
 ;;; rudel-infinote.el ends here

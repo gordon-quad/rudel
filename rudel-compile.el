@@ -53,7 +53,7 @@
        (subdirs   (mapcar
 		   (lambda (subdir)
 		     (concat rudel-dir subdir))
-		   '("." "jupiter" "adopted" "socket" "tls" "xmpp" "telepathy" "obby" "infinote" "zeroconf")))
+		   '("." "jupiter" "adopted" "socket" "tls" "xmpp" "telepathy" "obby" "infinote")))
        (loaddefs  (concat rudel-dir "rudel-loaddefs.el"))
        (filename  nil)) ;; TODO this is just a workaround for the
 			;; "void-variable: filename" compilation error
@@ -84,7 +84,7 @@
        (subdirs   (mapcar
 		   (lambda (subdir)
 		     (concat rudel-dir subdir))
-		   '(\".\" \"jupiter\" \"adopted\" \"socket\" \"tls\" \"xmpp\" \"telepathy\" \"obby\" \"infinote\" \"zeroconf\"))))
+		   '(\".\" \"jupiter\" \"adopted\" \"socket\" \"tls\" \"xmpp\" \"telepathy\" \"obby\" \"infinote\"))))
   ;; Adjust load path. We need to have all Rudel subdirectories on
   ;; the load path.
   (dolist (subdir subdirs)
